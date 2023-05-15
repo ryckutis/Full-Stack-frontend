@@ -24,7 +24,7 @@ export default function ModificationModal({ user, onClose, show }) {
       return;
     }
     try {
-      const resp = await axios.put(DB_ENDPOINT + `/user-update/${user._id}`, {
+      const resp = await axios.put(`${DB_ENDPOINT}/user-update/${user._id}`, {
         firstName,
         lastName,
         email,
