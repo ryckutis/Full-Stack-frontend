@@ -15,18 +15,6 @@ body {
 
 @media only screen and (max-width: 768px) {
   body {
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
     background-color: #214e7f;
-    z-index: -1;
   }
 }
